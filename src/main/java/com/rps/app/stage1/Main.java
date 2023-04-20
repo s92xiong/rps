@@ -1,4 +1,5 @@
 package com.rps.app.stage1;
+import java.util.Random;
 import java.util.Scanner;
 
 enum Gesture {
@@ -21,6 +22,8 @@ enum Gesture {
         return losesTo;
     }
 }
+
+enum Outcome { WIN, LOSS, DRAW }
 
 public class Main {
     public static void main(String[] args) {
