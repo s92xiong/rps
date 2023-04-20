@@ -27,9 +27,12 @@ enum Outcome { WIN, LOSS, DRAW }
 
 public class Main {
     public static void main(String[] args) {
-        String input = getInput();
-        String computedResult = computeDecision(input);
-        printResult(computedResult);
+        boolean runProgram = true;
+        while (runProgram) {
+            String input = getInput();
+            String computedResult = computeDecision(input);
+            printResult(computedResult);
+        }
     }
 
     public static String getInput() {
